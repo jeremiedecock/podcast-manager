@@ -55,6 +55,7 @@ def download_podcast(url):
 
     for item in feed["items"]:
         #print(item.keys())
+        item_title = item['title']
 
         for link in item["links"]:
             if link['type'] == 'audio/mpeg':
@@ -62,7 +63,15 @@ def download_podcast(url):
 
                 file_name = item_url.split('/')[-1]
                 file_name = file_name.split('%')[-1]
+
+                file_name, file_extension = os.path.splitext(file_name)
+
+                file_name = file_name + "_" + item_title + file_extension
+                file_name = '_'.join(file_name.split())                                    # replace spaces with '_'
                 file_name = ''.join(c for c in file_name if (c.isalnum() or c in ".-_"))   # remove special char in file_name
+                file_name = '_'.join([c for c in file_name.split('_') if c != ''])         # replace multiples '_' with simple '_'
+                file_name = '.'.join(file_name.split('_.'))
+                file_name = file_name.lower()
 
                 file_path = os.path.join(OUTPUT_DIR_PATH, file_name)
 
