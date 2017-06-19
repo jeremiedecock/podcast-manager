@@ -1,3 +1,7 @@
+*.json
+*.mp3
+mp3/
+
 # PYTHON ######################################################################
 
 # Byte-compiled / optimized / DLL files
