@@ -100,7 +100,9 @@ Documentation
 Example usage
 =============
 
-TODO
+Download "La méthode scientifique" ("France culture" podcast)::
+
+    dlpod.py http://radiofrance-podcast.net/podcast09/rss_14312.xml
 
 
 Bug reports
