@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# TODO_PROJECT_NAME
+# Podcast Manager
 
 # The MIT License
 #
-# TODO_COPYRIGHT_NOTICE
+# Copyright (c) 2016 Jérémie DECOCK (www.jdhp.org)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -44,14 +44,14 @@ except ImportError:
 
 # SETUP VARIABLES #############################################################
 
-from TODO_PYTHON_PACKAGE_NAME import __version__ as VERSION
+from pod import __version__ as VERSION
 
-AUTHOR_NAME = 'TODO_AUTHOR_NAME'
-AUTHOR_EMAIL = 'TODO_AUTHOR_EMAIL'
+AUTHOR_NAME = 'Jérémie DECOCK'
+AUTHOR_EMAIL = 'jd.jdhp@gmail.com'
 
-PYTHON_PACKAGE_NAME = 'TODO_PYTHON_PACKAGE_NAME'
-PROJECT_SHORT_DESC = 'TODO_PROJECT_SHORT_DESC'
-PROJECT_WEB_SITE_URL = 'TODO_PROJECT_WEB_SITE_URL'
+PYTHON_PACKAGE_NAME = 'pod'
+PROJECT_SHORT_DESC = 'Download and manage your favorite podcasts'
+PROJECT_WEB_SITE_URL = 'http://www.jdhp.org/software_en.html#pod'
 
 # See :  http://pypi.python.org/pypi?%3Aaction=list_classifiers
 CLASSIFIERS = ['Development Status :: 4 - Beta',
@@ -64,14 +64,14 @@ CLASSIFIERS = ['Development Status :: 4 - Beta',
                'Topic :: Software Development :: Libraries :: Python Modules',
                'Topic :: Software Development :: Libraries :: Application Frameworks']
 
-KEYWORDS = 'TODO_PYTHON_PACKAGE_NAME'
+KEYWORDS = 'pod'
 
 # You can either specify manually the list of packages to include in the
 # distribution or use "setuptools.find_packages()" to include them
 # automatically with a recursive search (from the root directory of the
 # project).
 #PACKAGES = find_packages()
-PACKAGES = ['TODO_PYTHON_PACKAGE_NAME']
+PACKAGES = ['pod']
 
 
 # The following list contains all dependencies that Python will try to

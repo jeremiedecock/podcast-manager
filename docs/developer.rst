@@ -1,4 +1,4 @@
-.. currentmodule:: TODO_PYTHON_PACKAGE_NAME
+.. currentmodule:: pod
 
 =================
 Developer's notes
@@ -15,7 +15,7 @@ Bug reports
 
 To search for bugs or report them, please use the Bug Tracker at:
 
-    TODO_PROJECT_ISSUE_TRACKER_URL
+    https://github.com/jeremiedecock/podcast-manager/issues
 
 Contribute
 ~~~~~~~~~~
@@ -54,6 +54,6 @@ Changes
 .. _pylint: http://www.pylint.org/
 .. _pyflakes: https://pypi.python.org/pypi/pyflakes
 
-.. _available on GitHub: TODO_PROJECT_GITHUB_URL
-.. _TODO.md: TODO_PROJECT_GITHUB_URL/blob/master/TODO.md
+.. _available on GitHub: https://github.com/jeremiedecock/podcast-manager
+.. _TODO.md: https://github.com/jeremiedecock/podcast-manager/blob/master/TODO.md
 
