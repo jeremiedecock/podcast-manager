@@ -4,14 +4,14 @@ AUTHOR_WEB_SITE="www.jdhp.org"
 
 COPYRIGHT_NOTICE="Copyright (c) 2016 ${AUTHOR_NAME} (${AUTHOR_WEB_SITE})"
 
-PROJECT_INITIAL_DATE="YYYY-MM-DD"          # TODO
-PROJECT_SHORT_DESC="TODO"                  # TODO one line
+PROJECT_INITIAL_DATE="2016-06-19"
+PROJECT_SHORT_DESC="Download and manage your favorite podcasts"
 
-PROJECT_NAME="TODO"                        # TODO e.g. PyAX-12
-PYTHON_PACKAGE_NAME="TODO"                 # TODO e.g. pyax12 (all in lower case and without special character)
+PROJECT_NAME="Podcast Manager"            # e.g. PyAX-12
+PYTHON_PACKAGE_NAME="pod"                 # e.g. pyax12 (all in lower case and without special character)
 
-PROJECT_GITHUB_ACCOUNT="jeremiedecock"     # TODO
-PROJECT_GITHUB_REPOSITORY_NAME="TODO"      # TODO
+PROJECT_GITHUB_ACCOUNT="jeremiedecock"
+PROJECT_GITHUB_REPOSITORY_NAME="podcast-manager"
 
 PROJECT_GITHUB_URL="https://github.com/${PROJECT_GITHUB_ACCOUNT}/${PROJECT_GITHUB_REPOSITORY_NAME}"
 PROJECT_ISSUE_TRACKER_URL="https://github.com/${PROJECT_GITHUB_ACCOUNT}/${PROJECT_GITHUB_REPOSITORY_NAME}/issues"
