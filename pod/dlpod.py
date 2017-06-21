@@ -53,8 +53,14 @@ def download_podcast(url):
     #print("Channel Title:", feed["channel"]["title"])
     #print("Channel Desc:", feed["channel"]["description"])
 
+    channel_title = feed["channel"]["title"]
+
     for item in feed["items"]:
         #print(item.keys())
+
+        pub_time = item["published_parsed"]
+        pub_time_str = "{}-{:02d}-{:02d}_{:02d}h{:02d}".format(pub_time.tm_year, pub_time.tm_mon, pub_time.tm_mday, pub_time.tm_hour, pub_time.tm_min)
+
         item_title = item['title']
 
         for link in item["links"]:
@@ -66,7 +72,9 @@ def download_podcast(url):
 
                 file_name, file_extension = os.path.splitext(file_name)
 
-                file_name = file_name + "_" + item_title + file_extension
+                #file_name = channel_title + "_" + file_name + "_" + item_title + file_extension
+                file_name = channel_title + "_" + pub_time_str + "_" + item_title + file_extension
+
                 file_name = '_'.join(file_name.split())                                    # replace spaces with '_'
                 file_name = ''.join(c for c in file_name if (c.isalnum() or c in ".-_"))   # remove special char in file_name
                 file_name = '_'.join([c for c in file_name.split('_') if c != ''])         # replace multiples '_' with simple '_'
